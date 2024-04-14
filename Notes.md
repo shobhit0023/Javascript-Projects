@@ -92,12 +92,12 @@ Note:- Here splice make changes in the real array.
     age:22
 }
 
-console.log(Employee.name);
-console.log(Employee["email"]);
+console.log(Employee.name); // this is one way of accessing object values. This generally takes this as string.
+console.log(Employee["email"]);  // But this is good way of accessing value from objects whether it is string or Number datatype.
 
-// Object.freeze(Employee);
+Object.freeze(Employee);  // this freeze the Object to make any further changes in it.
 Employee.email="shobhit@1234";
-console.log(Employee.email);
+console.log(Employee.email); // Like here after freeze if we want to update mail id then it will not be updated.
 
  Employee.greet = function(){
     console.log(`Hello ${this.name}`);
