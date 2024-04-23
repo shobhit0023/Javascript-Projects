@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body class="bg-[#14b8a6] text-white">
+
+    <div class="card min-h-screen min-w-screen flex flex-col items-center p-8 lg:p-16">
+
+        <h2 class="title text-5xl font-serif mt-8">Weather App</h2>
+
+        <!-- search-bar -->
+        <div class="search-bar space-x-2 flex items-center text-black p-8 lg:p-12">
+            <input type="text" placeholder="enter city name" class="search-input rounded-full p-2 lg:w-96 mx-2">
+            <button class="search-btn w-9 h-9 rounded-full bg-white hover:bg-red-400">
+                <i class="material-icons text-black">search</i>
+            </button>
+        </div>
+            
+        <!-- image -->
+        <div id="image" class="images">
+            <img src="assets\images\clouds.png" alt="">
+        </div>
+
+        <!-- temp && feels like -->
+        <div class="temp">
+            <div class="temp-text flex ml-8">
+                <h1 class="temp-value text-7xl font-medium" id="temp-no">32</h1>
+                <span class="temp-unit text-6xl mt-3 font-semibold">°C</span>
+            </div>
+            <div class="feels-like mt-4">
+                <h2 class="feels-text text-4xl font-medium" id="feels">Mostly Cloudy</h2>
+            </div>
+        </div>
+
+        <!-- humidity && wind -->
+        <div class="footer flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-36 mt-12">
+            <div class="humidity flex items-center space-x-3">
+                <img src="assets\images\humidity.png" alt="">
+                <div>
+                    <p class="text-4xl font-normal" id="humidity">50%</p>
+                    <h2 class="text-2xl font-normal">Humidity</h2>
+                </div>
+            </div>
+            <div class="wind flex items-center space-x-3">
+                <img src="assets\images\wind.png" alt="">
+                <div>
+                    <p class="text-4xl font-normal" id="wind">10 km/h</p>
+                    <h2 class="text-2xl font-normal">Wind Speed</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
