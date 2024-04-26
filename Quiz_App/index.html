@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        .btn:hover{
+            background-color: #222;
+            color: #fff;
+            transition: all 0.3s ease;
+
+        }
+    </style>
+</head>
+<body class="body m-0 p-0 box-border overflow-hidden ">
+    <div class="wrapper min-h-screen w-full bg-gradient-to-r from-blue-800 to-indigo-900 p-10"> 
+
+        <div class="card  bg-white shadow-2xl  w-full max-w-md mt-24 mx-auto mb-5 pt-5 px-8 pb-10 rounded-xl">
+
+            <h1 class="text-3xl font-normal ">Simple Quiz</h1>
+            <hr class="w-full my-3 border border-gray-500">
+
+            <div class="quiz my-5 ">
+                <h1 id="question" class="mb-1 font-semibold text-xl text-[#001e4d]">1. Which is largest animal in the world?</h1>
+                
+                <div id="buttons" class="btn-container flex flex-col
+                 "> 
+                     <!-- <button class="btn rounded-sm  border-[#222] border-[1px] font-normal text-start p-2 my-2 mx-0 bg-[#fff] text-[#222] w-full cursor-pointer">Option1</button>
+                    <button class="btn rounded-sm  border-[#222] border-[1px] font-normal text-start p-2 my-2 mx-0 bg-[#fff] text-[#222] w-full cursor-pointer">Option2</button>
+                    <button class="btn rounded-sm  border-[#222] border-[1px] font-normal text-start p-2 my-2 mx-0 bg-[#fff] text-[#222] w-full cursor-pointer">Option3</button> -->
+                    <!-- <button class="btn rounded-sm  border-[#222] border-[1px] font-normal text-start p-2 my-2 mx-0 bg-[#fff] text-[#222] w-full cursor-pointer">Option4</button> -->
+                </div>
+
+                <button id="next" class="btn-next rounded-sm  border-0 font-medium  p-2 mt-5 mx-auto mb-0 bg-[#001e4d] text-[#fff] w-36 cursor-pointer hidden ">Next</button>
+
+            </div>
+            
+
+
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
